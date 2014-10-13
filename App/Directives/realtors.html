@@ -1,0 +1,16 @@
+﻿
+    <div class="row realtors jumbotron">
+        <div class="col-lg-3" ng-repeat="realtor in vm.realtors">
+            <img style="max-height: 300px;" ng-src="{{realtor.photoURL}}">
+            <div>
+                <h3>{{realtor.name}}</h3>
+                <p>{{realtor.title}}</p>
+                <p>Phone: {{realtor.phone}}</p>
+                <p>Office: {{realtor.office}}</p>
+                <p>Fax: {{realtor.fax}}</p>
+                <p>{{realtor.email}}</p>
+            </div>
+        </div>
+    </div>
+
+

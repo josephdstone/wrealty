@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html ng-app="wrightApp">
+<head>
+    <title>Wright Realty - Homes for sale in Hurley, Lucedale, Moss Point, Gautier, Ocean Springs, Pascagoula, Vancleave, St. Martin, Agricola, George County, Jackson County Mississippi</title>
+    <link rel="stylesheet" href="Content/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+</head>
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/#" class="navbar-brand">Wright Realty LLC</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="/#">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Properties <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Homes For Sale</a></li>
+                            <li><a href="#">Commercial For Sale</a></li>
+                            <li><a href="#">Land For Sale</a></li>
+                            <li><a href="#">Sold Properties</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/#Realtors">Realtors</a>
+                    </li>
+                    <li>
+                        <a href="/#About">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div style="padding-top: 3.5%">
+            <div ng-cloak ng-view="">
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+    
+
+    <!--Imported Libraries-->
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    
+    <!--Angular Directives-->
+<script src="App/Directives/realtors.js"></script>
+</body>
+
+</html>
