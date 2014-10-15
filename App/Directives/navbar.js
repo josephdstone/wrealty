@@ -8,7 +8,7 @@
 			restrict: 'E',
 			replace: true,
 			scope: {},
-			templateUrl: 'App/Directives/navBar.html',
+			templateUrl: 'App/Directives/navbar.html',
 			controller: 'NavBarCtrl',
 			controllerAs: 'vm'
 		}
@@ -19,10 +19,12 @@
 	'use strict';
 	angular.module('wrightApp')
 		.controller('NavBarCtrl', NavBarCtrl);
-
-	function NavBarCtrl() {
+NavBarCtrl.$inject = ['$location'];
+	function NavBarCtrl($location) {
 		var vm = this;
-
+			vm.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
 
 	}
 })();
